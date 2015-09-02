@@ -43,6 +43,8 @@ class Layer(options: js.Object = null) extends Evented {
 @JSName("L.LayerGroup")
 class LayerGroup(options: js.Object = null) extends Layer {
 
+  def setZIndex(zindex: Int): Layer = js.native
+
 }
 
 @JSName("L.FeatureGroup")
@@ -65,6 +67,8 @@ class GeoJSON(geoJsonFeature: js.Object = null, options: js.Object = null
 
 @JSName("L.GridLayer")
 class GridLayer(options: js.Object = null) extends Layer {
+
+  def setZIndex(zindex: Int): Layer = js.native
 
 }
 

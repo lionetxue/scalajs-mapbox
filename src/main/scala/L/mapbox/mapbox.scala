@@ -29,7 +29,6 @@ class FeatureLayer private (mapDescriptor: js.Any,
   def this(mapDescriptor: js.Object = null, //TODO: GeoJSON (feature?)
            options: js.Object = null
             ) = this(mapDescriptor: js.Any, options)
-
 }
 
 
