@@ -75,5 +75,11 @@ class Map private (domElement: String,
 
   val attributionControl: ControlAttribution = js.native
 
+  def addLayer(layer: Layer): Map = js.native
+
+  def hasLayer(layer: Layer): Boolean = js.native
+
+  def removeLayer(layer: Layer): Map = js.native
+
 }
 
